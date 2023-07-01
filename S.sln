@@ -1,8 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserService", "UserService", "{6F12C4E8-78ED-4833-A97A-F2FA7692BEDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S.UserService.Api", "S.UserService.Api\S.UserService.Api.csproj", "{B8220733-83CB-4F66-A4A8-AD3BF462A9B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B8220733-83CB-4F66-A4A8-AD3BF462A9B0} = {6F12C4E8-78ED-4833-A97A-F2FA7692BEDE}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8220733-83CB-4F66-A4A8-AD3BF462A9B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8220733-83CB-4F66-A4A8-AD3BF462A9B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8220733-83CB-4F66-A4A8-AD3BF462A9B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8220733-83CB-4F66-A4A8-AD3BF462A9B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
