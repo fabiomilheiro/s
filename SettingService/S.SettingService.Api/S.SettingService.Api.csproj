@@ -7,8 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\S.Shared\S.Shared.csproj" />
-      <ProjectReference Include="..\S.SettingService.Shared\S.SettingService.Shared.csproj" />
+        <ProjectReference Include="..\..\S.Shared\S.Shared.csproj"/>
+        <ProjectReference Include="..\S.SettingService.Shared\S.SettingService.Shared.csproj"/>
     </ItemGroup>
 
 </Project>

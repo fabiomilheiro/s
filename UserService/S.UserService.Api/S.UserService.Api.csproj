@@ -7,15 +7,15 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Folder Include="Controllers\" />
+        <Folder Include="Controllers\"/>
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.0-preview.5.23313.2" />
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.0-preview.5.23313.2"/>
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\S.Shared\S.Shared.csproj" />
+        <ProjectReference Include="..\..\S.Shared\S.Shared.csproj"/>
     </ItemGroup>
 
 </Project>

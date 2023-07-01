@@ -18,12 +18,15 @@ app.MapGet("/health", () => "Healthy");
 
 if (app.Environment.IsDevelopment())
 {
+    app.UseDeveloperExceptionPage();
     // app.UseSwagger();
     // app.UseSwaggerUI();
 }
-
-app.UseDeveloperExceptionPage();
-app.UseHttpsRedirection();
+else
+{
+    app.UseDeveloperExceptionPage();
+    app.UseHttpsRedirection();
+}
 
 app.UseAuthorization();
 
