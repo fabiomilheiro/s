@@ -8,4 +8,6 @@
     &lt;/TestAncestor&gt;&#xD;
     &lt;Project Location="C:\dev\startup\S.UserService.Tests" Presentation="&amp;lt;UserService&amp;gt;\&amp;lt;S.UserService.Tests&amp;gt;" /&gt;&#xD;
   &lt;/Or&gt;&#xD;
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
+&lt;/SessionState&gt;</s:String>
+	
+	</wpf:ResourceDictionary>

@@ -1,3 +1,5 @@
+using S.UserService.Lib;
+
 namespace S.UserService.Tests;
 
 public class UnitTest1

@@ -23,7 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\S.Shared.Tests\S.Shared.Tests.csproj" />
+      <ProjectReference Include="..\S.UserService.Shared\S.UserService.Shared.csproj" />
     </ItemGroup>
 
 </Project>
