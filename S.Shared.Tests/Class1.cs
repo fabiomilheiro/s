@@ -1,5 +1,12 @@
-﻿namespace S.Shared.Tests;
+﻿using Xunit;
+
+namespace S.Shared.Tests;
 
 public class Class1
 {
+    [Fact]
+    public void Test()
+    {
+        
+    }
 }
