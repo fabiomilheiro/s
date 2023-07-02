@@ -3,3 +3,4 @@ obj
 debug
 bin
 publish
+docker/volume

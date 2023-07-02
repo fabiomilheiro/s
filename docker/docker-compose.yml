@@ -17,3 +17,19 @@ services:
       POSTGRES_USER: username # The PostgreSQL user (useful to connect to the database)
       POSTGRES_PASSWORD: password # The PostgreSQL password (useful to connect to the database)
       POSTGRES_DB: pikabytes # The PostgreSQL default database (automatically created at first launch)
+  localstack:
+    container_name: "${LOCALSTACK_DOCKER_NAME-localstack_main}"
+    image: localstack/localstack
+    ports:
+      - "127.0.0.1:4566:4566" # LocalStack Gateway
+      - "127.0.0.1:4510-4559:4510-4559" # external services port range
+    environment:
+      - DEBUG=${DEBUG-}
+      - DOCKER_HOST=unix:///var/run/docker.sock
+      - AWS_ACCESS_KEY_ID=LS_FAKE_KEY
+      - DEFAULT_REGION=eu-west-1
+      - AWS_SECRET_ACCESS_KEY=LS_FAKE_SECRET
+    volumes:
+      - "./localstack/ready.d/init-aws.sh:/etc/localstack/init/ready.d/init-aws.sh"
+      - "${LOCALSTACK_VOLUME_DIR:-./volume}:/var/lib/localstack"
+      - "/var/run/docker.sock:/var/run/docker.sock"
