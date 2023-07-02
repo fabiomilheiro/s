@@ -12,9 +12,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="appSettings.json">
+      <None Remove="sharedAppSettings.json" />
+      <Content Include="sharedAppSettings.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
+      </Content>
     </ItemGroup>
 
 </Project>
