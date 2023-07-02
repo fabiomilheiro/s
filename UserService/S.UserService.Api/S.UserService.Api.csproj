@@ -18,4 +18,11 @@
         <ProjectReference Include="..\..\S.Shared\S.Shared.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Include="..\S.UserService.Shared\sharedAppSettings.json">
+        <Link>sharedAppSettings.json</Link>
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
 </Project>

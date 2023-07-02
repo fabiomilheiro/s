@@ -1,3 +1,5 @@
 .idea
-obj/
-debug/
+obj
+debug
+bin
+publish

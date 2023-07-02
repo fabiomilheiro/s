@@ -9,11 +9,12 @@ var builder = WebApplication.CreateBuilder(new WebApplicationOptions
 var environmentName = builder.Environment.EnvironmentName;
 Console.WriteLine($"builder.Environment.WebRootPath: {builder.Environment.WebRootPath}");
 Console.WriteLine($"builder.Environment.ContentRootPath: {builder.Environment.ContentRootPath}");
+Console.WriteLine($"typeof(Program).Assembly.Location: {typeof(Program).Assembly.Location}");
 builder.Configuration
     .AddJsonFile("appSettings.json")
     .AddJsonFile($"appSettings.{environmentName}.json")
-    .AddJsonFile(Path.Combine(builder.Environment.ContentRootPath, "..", "S.UserService.Shared", "sharedAppSettings.json"), false)
-    //.AddJsonFile("sharedAppSettings.json", false, true)
+    .AddJsonFile(Path.Combine(builder.Environment.ContentRootPath, "..", "S.UserService.Shared", "sharedAppSettings.json"), true)
+    .AddJsonFile("sharedAppSettings.json", true)
     .AddEnvironmentVariables();
 
 builder.Services.AddControllers();
