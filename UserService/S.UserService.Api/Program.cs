@@ -10,6 +10,9 @@ var environmentName = builder.Environment.EnvironmentName;
 Console.WriteLine($"builder.Environment.WebRootPath: {builder.Environment.WebRootPath}");
 Console.WriteLine($"builder.Environment.ContentRootPath: {builder.Environment.ContentRootPath}");
 Console.WriteLine($"typeof(Program).Assembly.Location: {typeof(Program).Assembly.Location}");
+
+// TODO: Encapsulate logic in S.Shared project.
+// TODO: appSettings.json and appSettings.local.json should also be in the shared location, no?
 builder.Configuration
     .AddJsonFile("appSettings.json")
     .AddJsonFile($"appSettings.{environmentName}.json")
