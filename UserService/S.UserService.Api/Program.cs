@@ -17,7 +17,7 @@ builder.Configuration
     .AddJsonFile("appSettings.json")
     .AddJsonFile($"appSettings.{environmentName}.json")
     .AddJsonFile(Path.Combine(builder.Environment.ContentRootPath, "..", "S.UserService.Shared", "sharedAppSettings.json"), true)
-    .AddJsonFile("sharedAppSettings.json", true)
+    .AddJsonFile("sharedAppSettings.json")
     .AddEnvironmentVariables();
 
 builder.Services.AddControllers();
